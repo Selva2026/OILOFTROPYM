@@ -1,0 +1,4 @@
+[[redirects]]
+from = "/your-pdf-file.pdf"
+to = "/your-pdf-file.pdf"
+status = 200
