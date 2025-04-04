@@ -1,7 +1,7 @@
 import React from "react";
 
 const Resume = () => {
-  const resumePath = "/src/assets/MERN_CV_MP.pdf"; 
+  const resumePath = "./src/assets/MERN_CV_MP.pdf"; 
 
   return (
     <div className="flex flex-col items-center justify-center  p-4 bg-gray-100">
