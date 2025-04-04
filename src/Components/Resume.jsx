@@ -16,7 +16,7 @@ const Resume = () => {
       
     
       <iframe 
-        src={resumePath} 
+        src={'https://res.cloudinary.com/dn3jekp3r/image/upload/v1743784776/MERN_CV_MP_d5ss8y_page-0001_cwv3yw.jpg'} 
         width="1000" 
         height="450" 
         className="border mt-2 rounded-lg shadow-md"
