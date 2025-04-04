@@ -1,7 +1,7 @@
 import React from "react";
 
 const Resume = () => {
-  const resumePath = "./MERN_CV_MP.pdf"; 
+  const resumePath = "https://drive.google.com/file/d/11RgAI_EpK-oFzsVQEgvuaiVOvR6-5Ejr/view?usp=drivesdk"; 
 
   return (
     <div className="flex flex-col items-center justify-center  p-4 bg-gray-100">
