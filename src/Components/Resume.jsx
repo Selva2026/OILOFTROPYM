@@ -1,7 +1,7 @@
 import React from "react";
 
 const Resume = () => {
-  const resumePath = "https://drive.google.com/file/d/11RgAI_EpK-oFzsVQEgvuaiVOvR6-5Ejr/view?usp=drivesdk"; 
+  const resumePath = "https://res.cloudinary.com/dn3jekp3r/image/upload/v1743783155/MERN_CV_MP_d5ss8y.pdf"; 
 
   return (
     <div className="flex flex-col items-center justify-center  p-4 bg-gray-100">
