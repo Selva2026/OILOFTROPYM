@@ -15,7 +15,7 @@ const About = () => {
     >
       {/* Dark overlay */}
       <div className="flex flex-col h-full backdrop-brightness-50 justify-center md:items-start items-center text-center md:text-left px-4 md:px-12">
-        <h1 className="text-white font-bold text-5xl md:text-8xl leading-tight">
+        <h1 className="text-white font-bold text-5xl md:text-6xl leading-tight">
           Muthupandi <br className="hidden md:block" /> ThamaraiSelvam
         </h1>
 
