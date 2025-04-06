@@ -2,9 +2,16 @@ import React from 'react';
 import { TypeAnimation } from 'react-type-animation';
 
 const About = () => {
+ 
+
   return (
     <div
-      className="w-full h-screen bg-[url('https://res.cloudinary.com/dn3jekp3r/image/upload/v1743219370/my_r9aids.jpg')] bg-cover bg-center md:bg-[center] bg-[position:right_top] md:bg-[position:center]"
+      className={`
+        w-full h-screen 
+        bg-cover bg-center bg-no-repeat
+        bg-[url('https://res.cloudinary.com/dn3jekp3r/image/upload/v1743909071/new_hwss8c.png')] 
+        md:bg-[url('https://res.cloudinary.com/dn3jekp3r/image/upload/v1743219370/my_r9aids.jpg')]
+      `}
     >
       {/* Dark overlay */}
       <div className="flex flex-col h-full backdrop-brightness-50 justify-center md:items-start items-center text-center md:text-left px-4 md:px-12">
