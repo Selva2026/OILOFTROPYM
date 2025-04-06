@@ -4,8 +4,8 @@ const Intro = () => {
   return (
     <div className="bg-[url('https://res.cloudinary.com/dn3jekp3r/image/upload/c_crop,ar_1:1/v1743760270/home-bg_bvdtel.jpg')] bg-cover bg-center min-h-screen w-full p-4 md:p-12 flex flex-col justify-center">
       
-      <h1 className="text-3xl text-white font-bold mb-2">About</h1>
-      <div className="bg-blue-700 w-16 h-1 mb-6"></div>
+      <h1 className="text-3xl text-white ml-5  font-bold mb-2">About</h1>
+      <div className="bg-blue-700 w-16 h-1 ml-5 mb-6"></div>
 
       <p className="text-white text-base md:text-xl mb-6 leading-relaxed">
         Versatile and solution-oriented Full Stack Developer with a passion for crafting scalable, high-performance websites. With a strong foundation in architecture, server optimization, and user experience, I thrive on solving complex challenges and building impactful digital solutions.
