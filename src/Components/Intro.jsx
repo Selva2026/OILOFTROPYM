@@ -34,7 +34,7 @@ const Intro = () => {
             ].map((tech, index) => (
               <span
                 key={index}
-                className="bg-gradient-to-br from-purple-500 to-blue-900 border border-blue-500 rounded-full px-4 py-2 font-semibold"
+                className="bg-gradient-to-br from-purple-500 to-blue-900 border border-blue-500 rounded px-4 py-2 font-semibold"
               >
                 {tech}
               </span>
