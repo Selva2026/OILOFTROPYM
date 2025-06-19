@@ -32,7 +32,7 @@ const Home = () => {
           {menuOpen ? (
             <HiX className="text-white text-3xl" />
           ) : (
-            <HiMenuAlt3 className="text-white text-3xl" /> ABOUT DEVELOPER
+            <HiMenuAlt3 className="text-white text-3xl" /> ABOUT ME
           )}
        </button>
       </div>
