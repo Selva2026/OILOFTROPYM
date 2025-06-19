@@ -34,7 +34,7 @@ const Home = () => {
           ) : (
             <HiMenuAlt3 className="text-white text-3xl" />
           )}
-        ABOUT</button>
+        ABOUT DEVELOPER</button>
       </div>
 
       {/* Sidebar (Desktop) */}
