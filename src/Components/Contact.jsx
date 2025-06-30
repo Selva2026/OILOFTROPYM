@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import axios from "axios"; // Axios import
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -13,20 +14,28 @@ const Contact = () => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log("Form Data Submitted: ", formData);
-    alert("Your message has been sent!");
+
+    try {
+      // 🔁 Replace with your real backend URL
+      const response = await axios.post("https://portfolio-pandibe.onrender.com/api/contact", formData);
+      console.log("Server Response: ", response.data);
+      alert("Your message has been sent!");
+    } catch (error) {
+      console.error("Error sending message:", error);
+      alert("Failed to send message. Please try again later.");
+    }
   };
 
   return (
-    <div className="flex justify-center items-center w-full h-screen sm:h-screen bg-gradient-to-r from-purple-400 via-pink-500 to-red-500">
-      <div className="w-full h-full sm:h-auto sm:max-w-md p-6 sm:rounded-lg sm:shadow-lg bg-white flex items-center justify-center">
-        <form
-          onSubmit={handleSubmit}
-          className="w-full space-y-4 max-w-md"
-        >
-          <h2 className="text-xl font-semibold text-center mb-2 text-gray-800">Contact Me</h2>
+    <div className="flex justify-center sm:items-center w-full min-h-screen bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 p-4 overflow-y-auto">
+      <div className="w-full max-w-md p-6 rounded-lg shadow-lg bg-white/0 backdrop-blur-sm">
+        <form onSubmit={handleSubmit} className="w-full space-y-4">
+          <h2 className="text-xl font-semibold text-center mb-2 text-gray-800">
+            Contact Me
+          </h2>
+
           <input
             type="text"
             name="name"
@@ -34,8 +43,9 @@ const Contact = () => {
             value={formData.name}
             onChange={handleChange}
             required
-            className="w-full p-3 border border-gray-300 rounded-md text-base"
+            className="w-full p-3 border border-gray-300 rounded-md text-base bg-white/80"
           />
+
           <input
             type="text"
             name="company"
@@ -43,8 +53,9 @@ const Contact = () => {
             value={formData.company}
             onChange={handleChange}
             required
-            className="w-full p-3 border border-gray-300 rounded-md text-base"
+            className="w-full p-3 border border-gray-300 rounded-md text-base bg-white/80"
           />
+
           <input
             type="tel"
             name="contactNo"
@@ -52,8 +63,9 @@ const Contact = () => {
             value={formData.contactNo}
             onChange={handleChange}
             required
-            className="w-full p-3 border border-gray-300 rounded-md text-base"
+            className="w-full p-3 border border-gray-300 rounded-md text-base bg-white/80"
           />
+
           <input
             type="email"
             name="email"
@@ -61,16 +73,18 @@ const Contact = () => {
             value={formData.email}
             onChange={handleChange}
             required
-            className="w-full p-3 border border-gray-300 rounded-md text-base"
+            className="w-full p-3 border border-gray-300 rounded-md text-base bg-white/80"
           />
+
           <textarea
             name="message"
             placeholder="Message"
             value={formData.message}
             onChange={handleChange}
             required
-            className="w-full p-3 border border-gray-300 rounded-md h-28 text-base"
+            className="w-full p-3 border border-gray-300 rounded-md h-28 text-base bg-white/80"
           ></textarea>
+
           <button
             type="submit"
             className="w-full p-3 bg-blue-600 text-white font-semibold rounded-md hover:bg-blue-700"
