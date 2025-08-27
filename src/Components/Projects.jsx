@@ -8,7 +8,7 @@ const Projects = () => {
           {
             img: 'https://res.cloudinary.com/dn3jekp3r/image/upload/v1743761487/FFP_q0nwoc.png',
             title: 'E-COMMERCE WEB APP',
-            url: 'https://shoppingrouter.netlify.app/',
+            url: 'https://pandiecommcart.netlify.app/',
             desc: 'This app lets you browse products, view them on separate pages, and manage orders through an admin panel.',
           },
           {
@@ -77,3 +77,4 @@ const Projects = () => {
 };
 
 export default Projects;
+
