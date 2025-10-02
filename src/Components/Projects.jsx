@@ -8,7 +8,7 @@ const Projects = () => {
           {
             img: 'https://res.cloudinary.com/dn3jekp3r/image/upload/v1743761487/FFP_q0nwoc.png',
             title: 'E-COMMERCE WEB APP',
-            url: 'https://pandiecommcart.netlify.app/',
+            url: 'https://onlineekart.netlify.app/',
             desc: 'This app lets you browse products, view them on separate pages, and manage orders through an admin panel.',
           },
           {
@@ -19,28 +19,28 @@ const Projects = () => {
           },
           {
             img: 'https://res.cloudinary.com/dn3jekp3r/image/upload/v1743243256/movie_uukzum.png',
-            title: 'MOVIE BOOKING SITE',
-            url: 'https://moviesitesearching.netlify.app/',
+            title: 'HOSPITAL MANAGEMENT SYSTEM',
+            url: 'https://digitalhosregis.netlify.app/',
             desc: 'Find and book movie tickets. Admin dashboard for real-time status and ticket updates.',
           },
-          {
-            img: 'https://res.cloudinary.com/dn3jekp3r/image/upload/v1743761958/landing_ztxa3w.png',
-            title: 'FIGMA LANDING PAGE',
-            url: 'https://muthusecondlanding.netlify.app/',
-            desc: 'Clean, modern landing page design using Figma and Tailwind CSS for visual impact.',
-          },
-          {
-            img: 'https://res.cloudinary.com/dn3jekp3r/image/upload/v1743762692/landing2_ahdspc.png',
-            title: 'FIGMA LANDING PAGE',
-            url: 'https://muthufirsttask.netlify.app/',
-            desc: 'Another modern landing page using Figma and Tailwind. Responsive and portfolio-ready!',
-          },
-          {
-            img: 'https://res.cloudinary.com/dn3jekp3r/image/upload/v1743763141/lan_xxfsb1.png',
-            title: 'BACKEND PROJECTS',
-            url: 'https://muthufirsttask.netlify.app/',
-            desc: 'Built using Node.js, Express.js, and MongoDB. Secured with JWT and OAuth. 🚀',
-          },
+          // {
+          //   img: 'https://res.cloudinary.com/dn3jekp3r/image/upload/v1743761958/landing_ztxa3w.png',
+          //   title: 'FIGMA LANDING PAGE',
+          //   url: 'https://muthusecondlanding.netlify.app/',
+          //   desc: 'Clean, modern landing page design using Figma and Tailwind CSS for visual impact.',
+          // },
+          // {
+          //   img: 'https://res.cloudinary.com/dn3jekp3r/image/upload/v1743762692/landing2_ahdspc.png',
+          //   title: 'FIGMA LANDING PAGE',
+          //   url: 'https://muthufirsttask.netlify.app/',
+          //   desc: 'Another modern landing page using Figma and Tailwind. Responsive and portfolio-ready!',
+          // },
+          // {
+          //   img: 'https://res.cloudinary.com/dn3jekp3r/image/upload/v1743763141/lan_xxfsb1.png',
+          //   title: 'BACKEND PROJECTS',
+          //   url: 'https://muthufirsttask.netlify.app/',
+          //   desc: 'Built using Node.js, Express.js, and MongoDB. Secured with JWT and OAuth. 🚀',
+          // },
         ].map((project, idx) => (
           <div key={idx} className="bg-black bg-opacity-50 p-4 rounded-lg shadow-lg">
             <img
@@ -77,4 +77,5 @@ const Projects = () => {
 };
 
 export default Projects;
+
 
