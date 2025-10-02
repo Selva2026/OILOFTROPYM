@@ -7,25 +7,25 @@ const Projects = () => {
       img: "https://res.cloudinary.com/dn3jekp3r/image/upload/v1743761487/FFP_q0nwoc.png",
       title: "E-COMMERCE WEB APP",
       desc: "This app lets you browse products, view them on separate pages, and manage orders through an admin panel.",
-      demo: "https://shoppingrouter.netlify.app/",
-      frontend: "https://github.com/yourusername/ecommerce-frontend",
-      backend: "https://github.com/yourusername/ecommerce-backend",
+      demo: "https://onlineekart.netlify.app/",
+      frontend: "https://github.com/Selva2026/ECommerce_FE",
+      backend: "https://github.com/Selva2026/ECommerce_BE",
     },
     {
       img: "https://res.cloudinary.com/dn3jekp3r/image/upload/v1743760757/FSB_iyrtar.png",
       title: "FLIGHT BOOKING APP",
       desc: "Book flights globally with email confirmation and admin dashboard for order tracking.",
       demo: "https://fsbskyradar.netlify.app/",
-      frontend: "https://github.com/yourusername/flight-frontend",
-      backend: "https://github.com/yourusername/flight-backend",
+      frontend: "https://github.com/Selva2026/fsbskyradar",
+      backend: "https://github.com/Selva2026/fsbbackend",
     },
     {
       img: "https://res.cloudinary.com/dn3jekp3r/image/upload/v1743243256/movie_uukzum.png",
-      title: "MOVIE BOOKING SITE",
-      desc: "Find and book movie tickets. Admin dashboard for real-time status and ticket updates.",
-      demo: "https://moviesitesearching.netlify.app/",
-      frontend: "https://github.com/yourusername/movie-frontend",
-      backend: "https://github.com/yourusername/movie-backend",
+      title: "HOSPITAL PATIENT MANAGEMENT SYSTEM",
+      desc: "create a patient data and manage the patient in future. Admin dashboard for real-time patient management.",
+      demo: "https://digitalhosregis.netlify.app/",
+      frontend: "https://github.com/Selva2026/Hospital_Management_system",
+      backend: "https://github.com/Selva2026/Hospital_Management_system_BE",
     },
     
   ];
@@ -93,3 +93,4 @@ const Projects = () => {
 };
 
 export default Projects;
+
