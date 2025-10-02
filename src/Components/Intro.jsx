@@ -65,7 +65,7 @@ const Intro = () => {
         >
           <h1 className="mb-1">MUTHUPANDI THAMARAISELVAM</h1>
        
-          <h1 className="mb-4">MERN FULL STACK DEVELOPMENT</h1>
+          <h1 className="mb-4">MERN FULL STACK </h1>
 
           {/* Skills Animation */}
           <div className="flex flex-wrap justify-center gap-2 text-sm md:text-lg text-lime-400">
@@ -93,4 +93,5 @@ const Intro = () => {
 };
 
 export default Intro;
+
 
