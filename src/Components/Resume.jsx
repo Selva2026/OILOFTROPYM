@@ -22,7 +22,7 @@ const Resume = () => {
       {/* Responsive Resume Preview */}
       <div className="w-full mt-4 flex justify-center px-2">
         <img
-          src="https://res.cloudinary.com/dn3jekp3r/image/upload/v1743784776/MERN_CV_MP_d5ss8y_page-0001_cwv3yw.jpg"
+          src="https://res.cloudinary.com/dn3jekp3r/image/upload/v1759430653/Muthupandi_Resume_MERN_page-0001_fujkum.jpg"
           alt="Resume Preview"
           className="rounded-lg shadow-md w-full max-w-[1000px] h-auto"
         />
@@ -41,3 +41,4 @@ const Resume = () => {
 };
 
 export default Resume;
+
