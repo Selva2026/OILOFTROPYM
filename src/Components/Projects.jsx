@@ -1,75 +1,91 @@
-import React from 'react';
+import React from "react";
+import { motion } from "framer-motion";
 
 const Projects = () => {
+  const projects = [
+    {
+      img: "https://res.cloudinary.com/dn3jekp3r/image/upload/v1743761487/FFP_q0nwoc.png",
+      title: "E-COMMERCE WEB APP",
+      desc: "This app lets you browse products, view them on separate pages, and manage orders through an admin panel.",
+      demo: "https://shoppingrouter.netlify.app/",
+      frontend: "https://github.com/yourusername/ecommerce-frontend",
+      backend: "https://github.com/yourusername/ecommerce-backend",
+    },
+    {
+      img: "https://res.cloudinary.com/dn3jekp3r/image/upload/v1743760757/FSB_iyrtar.png",
+      title: "FLIGHT BOOKING APP",
+      desc: "Book flights globally with email confirmation and admin dashboard for order tracking.",
+      demo: "https://fsbskyradar.netlify.app/",
+      frontend: "https://github.com/yourusername/flight-frontend",
+      backend: "https://github.com/yourusername/flight-backend",
+    },
+    {
+      img: "https://res.cloudinary.com/dn3jekp3r/image/upload/v1743243256/movie_uukzum.png",
+      title: "MOVIE BOOKING SITE",
+      desc: "Find and book movie tickets. Admin dashboard for real-time status and ticket updates.",
+      demo: "https://moviesitesearching.netlify.app/",
+      frontend: "https://github.com/yourusername/movie-frontend",
+      backend: "https://github.com/yourusername/movie-backend",
+    },
+    
+  ];
+
   return (
-    <div className="bg-[url('https://res.cloudinary.com/dn3jekp3r/image/upload/c_crop,ar_1:1/v1743760270/home-bg_bvdtel.jpg')] w-full min-h-screen bg-cover bg-center px-4 py-6">
-      <div className="grid grid-cols-1  md:grid-cols-3 gap-6 w-full">
-        {[
-          {
-            img: 'https://res.cloudinary.com/dn3jekp3r/image/upload/v1743761487/FFP_q0nwoc.png',
-            title: 'E-COMMERCE WEB APP',
-            url: 'https://onlineekart.netlify.app/',
-            desc: 'This app lets you browse products, view them on separate pages, and manage orders through an admin panel.',
-          },
-          {
-            img: 'https://res.cloudinary.com/dn3jekp3r/image/upload/v1743760757/FSB_iyrtar.png',
-            title: 'FLIGHT BOOKING APP',
-            url: 'https://fsbskyradar.netlify.app/',
-            desc: 'Book flights globally with email confirmation and admin dashboard for order tracking.',
-          },
-          {
-            img: 'https://res.cloudinary.com/dn3jekp3r/image/upload/v1743243256/movie_uukzum.png',
-            title: 'HOSPITAL MANAGEMENT SYSTEM',
-            url: 'https://digitalhosregis.netlify.app/',
-            desc: 'Find and book movie tickets. Admin dashboard for real-time status and ticket updates.',
-          },
-          // {
-          //   img: 'https://res.cloudinary.com/dn3jekp3r/image/upload/v1743761958/landing_ztxa3w.png',
-          //   title: 'FIGMA LANDING PAGE',
-          //   url: 'https://muthusecondlanding.netlify.app/',
-          //   desc: 'Clean, modern landing page design using Figma and Tailwind CSS for visual impact.',
-          // },
-          // {
-          //   img: 'https://res.cloudinary.com/dn3jekp3r/image/upload/v1743762692/landing2_ahdspc.png',
-          //   title: 'FIGMA LANDING PAGE',
-          //   url: 'https://muthufirsttask.netlify.app/',
-          //   desc: 'Another modern landing page using Figma and Tailwind. Responsive and portfolio-ready!',
-          // },
-          // {
-          //   img: 'https://res.cloudinary.com/dn3jekp3r/image/upload/v1743763141/lan_xxfsb1.png',
-          //   title: 'BACKEND PROJECTS',
-          //   url: 'https://muthufirsttask.netlify.app/',
-          //   desc: 'Built using Node.js, Express.js, and MongoDB. Secured with JWT and OAuth. 🚀',
-          // },
-        ].map((project, idx) => (
-          <div key={idx} className="bg-black bg-opacity-50 p-4 rounded-lg shadow-lg">
+    <div className="bg-[url('https://res.cloudinary.com/dn3jekp3r/image/upload/c_crop,ar_1:1/v1743760270/home-bg_bvdtel.jpg')] w-full min-h-screen bg-cover bg-center px-4 py-10">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        {projects.map((project, idx) => (
+          <motion.div
+            key={idx}
+            className="bg-black bg-opacity-60 p-5 rounded-2xl shadow-lg hover:shadow-2xl transition duration-300 flex flex-col"
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            whileHover={{ scale: 1.03 }}
+            transition={{ duration: 0.4 }}
+          >
             <img
               src={project.img}
               alt={project.title}
-              className="rounded-lg w-full h-40 object-cover mb-4"
+              className="rounded-xl w-full h-40 sm:h-48 object-cover mb-4"
             />
-            <div className="flex flex-col items-center font-bold text-center">
-              <div className="flex items-center justify-center gap-2 mb-2">
+            <h2 className="text-lg font-bold text-white text-center mb-2">
+              {project.title}
+            </h2>
+            <p className="text-gray-200 text-sm text-center mb-4">
+              {project.desc}
+            </p>
+
+            {/* Buttons */}
+            <div className="flex flex-col sm:flex-row flex-wrap gap-3 justify-center mt-auto">
+              <a
+                href={project.demo}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center gap-2 bg-yellow-500 text-black px-4 py-2 rounded-full font-semibold hover:bg-yellow-400 transition"
+              >
+                🔗 Live Demo
+              </a>
+              {project.frontend && (
                 <a
-                  className="text-blue-900 text-sm rounded-full px-3 py-1 bg-yellow-400"
-                  href={project.url}
+                  href={project.frontend}
                   target="_blank"
                   rel="noopener noreferrer"
+                  className="flex items-center justify-center gap-2 bg-blue-600 text-white px-4 py-2 rounded-full font-semibold hover:bg-blue-500 transition"
                 >
-                  {project.title}
+                  💻 Frontend
                 </a>
+              )}
+              {project.backend && (
                 <a
-                  className="bg-blue-900 text-white border-2 border-white text-sm px-3 py-1 rounded-full"
-                  href={project.url}
+                  href={project.backend}
                   target="_blank"
                   rel="noopener noreferrer"
+                  className="flex items-center justify-center gap-2 bg-green-600 text-white px-4 py-2 rounded-full font-semibold hover:bg-green-500 transition"
                 >
-                  DEMO
+                  🖥️ Backend
                 </a>
-              </div>
-              <p className="text-white text-sm">{project.desc}</p>
+              )}
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
     </div>
@@ -77,5 +93,3 @@ const Projects = () => {
 };
 
 export default Projects;
-
-
