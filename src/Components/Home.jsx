@@ -82,18 +82,18 @@ const SocialIcons = () => (
     <a href="https://github.com/Selva2026?tab=repositories" target="_blank">
       <FaGithub className="text-gray-300 bg-black hover:text-blue-700 cursor-pointer rounded-full p-2 text-4xl" />
     </a>
-    <a href="https://x.com/_AJAIY" target="_blank">
+    {/* <a href="https://x.com/_AJAIY" target="_blank">
       <FaXTwitter className="text-gray-300 mx-1 hover:text-blue-700 cursor-pointer text-3xl" />
-    </a>
+    </a> */}
     <a
       href="https://www.linkedin.com/in/muthupandi-thamaraiselvam-2b0022124/"
       target="_blank"
     >
       <TiSocialLinkedinCircular className="text-gray-300 hover:text-blue-700 cursor-pointer text-4xl" />
     </a>
-    <a href="https://www.instagram.com/ajaiy005/" target="_blank">
+    {/* <a href="https://www.instagram.com/ajaiy005/" target="_blank">
       <BsInstagram className="text-gray-300 mx-1 hover:text-blue-700 cursor-pointer text-3xl" />
-    </a>
+    </a> */}
     <Link to="/contact">
       <MdAlternateEmail className="text-gray-300 mx-1 border-2 rounded-full p-1 w-9 h-9 hover:text-blue-700 cursor-pointer text-3xl" />
     </Link>
@@ -120,3 +120,4 @@ const NavItem = ({ icon, to, label, onClick }) => (
 );
 
 export default Home;
+
