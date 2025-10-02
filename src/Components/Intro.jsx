@@ -64,8 +64,7 @@ const Intro = () => {
           transition={{ delay: 0.5, duration: 0.8 }}
         >
           <h1 className="mb-1">MUTHUPANDI THAMARAISELVAM</h1>
-          <h1 className="mb-1">FRESHER</h1>
-          <h1 className="mb-1">BACHELOR OF ENGINEERING</h1>
+       
           <h1 className="mb-4">MERN FULL STACK DEVELOPMENT</h1>
 
           {/* Skills Animation */}
@@ -94,3 +93,4 @@ const Intro = () => {
 };
 
 export default Intro;
+
