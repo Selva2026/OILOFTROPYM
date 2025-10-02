@@ -20,7 +20,7 @@ const Projects = () => {
       backend: "https://github.com/Selva2026/fsbbackend",
     },
     {
-      img: "https://res.cloudinary.com/dn3jekp3r/image/upload/v1743243256/movie_uukzum.png",
+      img: "https://genamet.com/media/yhpdelqm/consultation-timeline.png",
       title: "HOSPITAL PATIENT MANAGEMENT SYSTEM",
       desc: "create a patient data and manage the patient in future. Admin dashboard for real-time patient management.",
       demo: "https://digitalhosregis.netlify.app/",
@@ -93,4 +93,5 @@ const Projects = () => {
 };
 
 export default Projects;
+
 
